@@ -70,7 +70,7 @@ body .landing-content {
   transform: none;
   text-align: left;
   padding-left: 15px;
-  height: 120vh;
+  height: 100vh;
   min-height: 85vh;
   overflow: hidden;
 }
@@ -232,6 +232,9 @@ body .contact-me-section .contact-links {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 body .contact-me-section .contact-links a {
@@ -239,4 +242,26 @@ body .contact-me-section .contact-links a {
   color: #fafafa;
   font-size: 1.2em;
   font-weight: 200;
+}
+
+@media screen and (min-device-width: 427px) {
+  main .landing-content .top-text, main .landing-content .center-text, main .landing-content .bottom-text {
+    font-size: 4em;
+    margin-left: 50px;
+  }
+  main .landing-content .landing-image {
+    top: 5%;
+    width: 400px;
+  }
+  main .landing-content .scroll-down {
+    left: 70px;
+    bottom: 20px;
+  }
+  main .landing-content p {
+    bottom: 38px;
+    left: 120px;
+  }
+  main .about-me {
+    height: 50vh;
+  }
 }

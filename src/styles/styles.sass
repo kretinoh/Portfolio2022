@@ -48,7 +48,7 @@ body
     transform: none
     text-align: left
     padding-left: 15px
-    height: 120vh
+    height: 100vh
     min-height: 85vh 
     overflow: hidden
     .top-text,.center-text,.bottom-text
@@ -166,8 +166,29 @@ body
       display: flex
       justify-content: space-between
       margin-top: 50px
+      margin-left: 10px
+      margin-right: 10px
+      margin-bottom: 20px
       a
         text-decoration: none
         color: $font-color
         font-size: 1.2em
         font-weight: 200
+@media screen and (min-device-width: 427px)
+  main
+    .landing-content
+      .top-text,.center-text,.bottom-text
+        font-size: 4em
+        margin-left: 50px
+      .landing-image
+        top: 5%
+        width: 400px
+      .scroll-down
+        left: 70px
+        bottom: 20px
+      p
+        bottom: 38px
+        left: 120px
+    .about-me
+      height: 50vh
+
